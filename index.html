@@ -9,10 +9,12 @@
   <body class="bg-gray-100">
     <!-- Header Section -->
     <header>
-      <div class="flex justify-between items-center bg-green-700 px-6 py-4">
+      <div class="flex flex-row justify-between items-center bg-green-700 px-4 sm:px-40">
+        <!-- Logo -->
         <a href="index.html">
-          <img src="picture/depanpc.png" alt="logo" class="h-10" />
+          <img src="picture/depanpc.png" alt="logo" class="h-20" />
         </a>
+        <!-- Menu -->
         <ul class="hidden md:flex gap-x-7 text-white font-semibold">
           <li><a href="#">About Me</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -21,6 +23,7 @@
           <li><a href="#">Membership</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
+        <!-- Location Button -->
         <a
           href="https://www.google.com/maps/search/Point+Coffee/@-2.9183958,101.2073584,5.25z"
           class="flex items-center gap-x-2 border border-white text-white font-semibold rounded-lg px-4 py-2"
@@ -33,18 +36,8 @@
           <span>Location</span>
         </a>
       </div>
-
-      <!-- Embedded Video Section -->
-      <div class="relative w-full pb-[56.25%]">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/XobKsZAPBIk?autoplay=1&mute=1&loop=1&playlist=XobKsZAPBIk&controls=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"
-        ></iframe>
-      </div>
     </header>
+    
 
     <!-- Content Section -->
     <section class="bg-[url('picture/bg-pc.jpg')] bg-cover bg-center py-10">
@@ -71,20 +64,23 @@
           </h1>
 
           <p
-            class="text-lg text-[#95989a] mb-6 whitespace-normal sm:whitespace-nowrap"
-          >
-            Point Coffee merupakan brand spesialisasi kopi dengan konsep "Made
-            to <br />
-            Order" yang menyajikan Fresh Quality Coffee. Dengan menggunakan
-            <br />
-            100% biji kopi asli Indonesia yang disajikan oleh barista terlatih
-            dengan <br />
-            mesin kopi standar internasional. Berdiri sejak tahun 2016, dan kini
-            sudah <br />
-            hadir tersedia di lebih dari 1.200 outlet di seluruh Indonesia untuk
-            <br />
-            mempermudah Point People menjangkau Point Coffee.
-          </p>
+  class="text-lg text-[#95989a] mb-6 px-4 sm:px-10 md:px-0 text-left whitespace-normal sm:whitespace-nowrap"
+>
+  Point Coffee merupakan brand spesialisasi kopi dengan konsep "Made
+  to <br />
+  Order" yang menyajikan Fresh Quality Coffee. Dengan menggunakan
+  <br />
+  100% biji kopi asli Indonesia yang disajikan oleh barista terlatih
+  dengan <br />
+  mesin kopi standar internasional. Berdiri sejak tahun 2016, dan kini
+  sudah <br />
+  hadir tersedia di lebih dari 1.200 outlet di seluruh Indonesia untuk
+  <br />
+  mempermudah Point People menjangkau Point Coffee.
+</p>
+
+        
+
           <button
             class="mt-12 bg-[#00833e] text-white py-2 px-4 cursor-pointer w-[280px] h-[50px] font-bold text-[16px] rounded-lg transition-colors duration-300 hover:bg-[#026430]"
           >
@@ -92,6 +88,82 @@
           </button>
         </div>
       </div>
+      <section class="py-20">
+        <div class="max-w-screen-lg mx-auto text-start mb-10 px-4 sm:px-0">
+          <h2 class="text-3xl font-bold text-[#313131]">Menu</h2>
+          <p class="text-lg text-[#95989a]">
+            Nikmati kelezatan minuman yang Always on Point
+          </p>
+        </div>
+        <div
+  class="max-w-screen-lg mx-auto px-4 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-6"
+>
+  <!-- Menu Items -->
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi21.png"
+      alt="Coffee Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Coffee Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi22.png"
+      alt="Frappe Series"
+      class="rounded-md shadow-lg w-[316px] h-[210px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Frappe Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi23.png"
+      alt="Milk Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Milk Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kop24.png"
+      alt="Kopi Baper Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Kopi Baper Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi25.png"
+      alt="Milk Indonesia Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Milk Indonesia Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi26.png"
+      alt="Tea Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Tea Series
+    </h3>
+  </div>
+</div>
+
+      </section>
     </section>
+
+    
   </body>
 </html>
