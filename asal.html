@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Point Coffee</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
     <!-- Header Section -->
     <header>
-      <div class="flex justify-between items-center bg-green-700 px-40">
+      <div class="flex flex-row justify-between items-center bg-green-700 px-4 sm:px-40">
+        <!-- Logo -->
         <a href="index.html">
           <img src="picture/depanpc.png" alt="logo" class="h-20" />
         </a>
+        <!-- Menu -->
         <ul class="hidden md:flex gap-x-7 text-white font-semibold">
           <li><a href="#">About Me</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -21,6 +24,7 @@
           <li><a href="#">Membership</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
+        <!-- Location Button -->
         <a
           href="https://www.google.com/maps/search/Point+Coffee/@-2.9183958,101.2073584,5.25z"
           class="flex items-center gap-x-2 border border-white text-white font-semibold rounded-lg px-4 py-2"
@@ -34,7 +38,6 @@
         </a>
       </div>
 
-      <!-- Embedded Video Section -->
       <div class="relative w-full pb-[56.25%]">
         <iframe
           class="absolute top-0 left-0 w-full h-full"
@@ -44,7 +47,9 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"
         ></iframe>
       </div>
+      
     </header>
+    
 
     <!-- Content Section -->
     <section class="bg-[url('picture/bg-pc.jpg')] bg-cover bg-center py-10">
@@ -60,19 +65,18 @@
           />
         </div>
         <!-- Text Content -->
-        <!-- Text Content -->
-<div
-class="max-w-md mx-auto px-6 md:px-0 text-left order-last md:order-first"
->
-<h1
-  class="text-4xl md:text-5xl font-bold text-[#313131] mb-4 whitespace-normal sm:whitespace-nowrap"
->
-  Crafted with passion, <br />brewed with<br />
-  precision.
-</h1>
+        <div
+          class="max-w-md mx-10 text-center md:text-left order-last md:order-first"
+        >
+          <h1
+            class="text-4xl md:text-5xl font-bold text-[#313131] mb-4 whitespace-normal sm:whitespace-nowrap"
+          >
+            Crafted with passion, <br />brewed with<br />
+            precision.
+          </h1>
 
-<p
-  class="text-lg text-[#95989a] mb-6 whitespace-normal sm:whitespace-nowrap"
+          <p
+  class="text-lg text-[#95989a] mb-6 px-4 sm:px-10 md:px-0 text-left whitespace-normal sm:whitespace-nowrap"
 >
   Point Coffee merupakan brand spesialisasi kopi dengan konsep "Made
   to <br />
@@ -86,13 +90,15 @@ class="max-w-md mx-auto px-6 md:px-0 text-left order-last md:order-first"
   <br />
   mempermudah Point People menjangkau Point Coffee.
 </p>
-<button
-  class="mt-12 bg-[#00833e] text-white py-2 px-4 cursor-pointer w-[280px] h-[50px] font-bold text-[16px] rounded-lg transition-colors duration-300 hover:bg-[#026430]"
->
-  Lihat Selengkapnya
-</button>
-</div>
 
+        
+
+          <button
+            class="mt-12 bg-[#00833e] text-white py-2 px-4 cursor-pointer w-[280px] h-[50px] font-bold text-[16px] rounded-lg transition-colors duration-300 hover:bg-[#026430]"
+          >
+            Lihat Selengkapnya
+          </button>
+        </div>
       </div>
       <section class="py-20">
         <div class="max-w-screen-lg mx-auto text-start mb-10 px-4 sm:px-0">
@@ -102,74 +108,99 @@ class="max-w-md mx-auto px-6 md:px-0 text-left order-last md:order-first"
           </p>
         </div>
         <div
-          class="max-w-screen-lg mx-auto px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <!-- Menu Items -->
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kopi21.png"
-              alt="Coffee Series"
-              class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Coffee Series
-            </h3>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kopi22.png"
-              alt="Frappe Series"
-              class="rounded-md shadow-lg w-[316px] h-[210px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Frappe Series
-            </h3>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kopi23.png"
-              alt="Milk Series"
-              class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Milk Series
-            </h3>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kop24.png"
-              alt="Kopi Baper Series"
-              class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Kopi Baper Series
-            </h3>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kopi25.png"
-              alt="Milk Indonesia Series"
-              class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Milk Indonesia Series
-            </h3>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="picture/kopi26.png"
-              alt="Tea Series"
-              class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
-            />
-            <h3 class="mt-4 text-xl font-semibold text-[#313131]">
-              Tea Series
-            </h3>
-          </div>
-        </div>
+  class="max-w-screen-lg mx-auto px-4 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-6"
+>
+  <!-- Menu Items -->
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi21.png"
+      alt="Coffee Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Coffee Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi22.png"
+      alt="Frappe Series"
+      class="rounded-md shadow-lg w-[316px] h-[210px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Frappe Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi23.png"
+      alt="Milk Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Milk Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kop24.png"
+      alt="Kopi Baper Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Kopi Baper Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi25.png"
+      alt="Milk Indonesia Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Milk Indonesia Series
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      src="picture/kopi26.png"
+      alt="Tea Series"
+      class="rounded-md shadow-lg w-[300px] h-[200px] object-cover"
+    />
+    <h3 class="mt-4 text-xl font-semibold text-[#313131]">
+      Tea Series
+    </h3>
+  </div>
+</div>
+
       </section>
-      
     </section>
 
+    <div class="main-foto">
+      <div class="keempat bg-gray-100 p-5 rounded-lg">
+        <div class="containergl flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-between px-4 md:pl-60">
+          <!-- Left side with main image and title -->
+          <div class="side-img w-full md:w-120 h-auto rounded-lg">
+            <img src="picture/fotobaru.jpg" alt="Main Article Image" class="w-full md:w-[50%] rounded-lg object-cover">
+            <div class="main-info mt-4">
+              <h4 class="text-left text-lg font-bold text-gray-800 font-sans">
+                Ngopi Tanpa Ragu, Point Coffee Raih Sertifikat Halal
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+      
+  
+      <button class="see-all-btn bg-green-700 text-white py-2 px-4 rounded-lg mt-4 font-semibold text-lg block mx-auto hover:bg-green-800 focus:outline-none">
+        Lihat Semua Artikel
+    </button>
+
+  </div>
+  
     
   </body>
 </html>
