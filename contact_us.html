@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <style>
+      /* Animasi untuk garis bawah pada menu desktop */
+      .group span {
+        transition: all 0.7s ease-in-out;
+      }
+
+      /* Transisi untuk fullscreen menu */
+      #fullscreen-menu {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.5s ease-in-out;
+      }
+
+      #fullscreen-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <header class="sticky top-0 z-50 bg-green-700 shadow-lg">
+      <div class="flex justify-between items-center bg-green-700 px-4 sm:px-40">
+        <!-- Hamburger Menu Icon (Mobile Only) -->
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-white focus:outline-none z-50"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="ml-auto md:ml-0">
+          <img src="picture/depanpc.png" alt="Point Coffee logo" class="h-20" />
+        </a>
+
+        <!-- Menu (Desktop Only) -->
+        <ul class="hidden md:flex gap-x-7 text-white font-semibold">
+          <li>
+            <a href="index.html" class="relative group">
+              Home
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="biodata.html" class="relative group">
+              Biodata
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group">
+              Film Recommendations
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group">
+              Articles
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group">
+              Membership
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group">
+              FAQ
+              <span
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
+              ></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Location Button (Desktop Only) -->
+        <a
+          href="https://www.google.com/maps/search/Point+Coffee/"
+          class="hidden md:flex items-center gap-x-2 border border-white text-white font-semibold rounded-lg px-4 py-2"
+        >
+          <img
+            src="https://pointcoffee.id/wp-content/uploads/2023/05/Icon-Lokasi-2.png"
+            alt="location icon"
+            class="h-4"
+          />
+          <span>Location</span>
+        </a>
+      </div>
+
+      <!-- Fullscreen Menu (Mobile Only) -->
+      <div
+        id="fullscreen-menu"
+        class="hidden fixed inset-0 bg-white text-green-700 flex flex-col items-center justify-center space-y-6 text-xl font-semibold z-50"
+      >
+        <!-- Close Button -->
+        <button id="menu-close" class="absolute top-4 left-4 text-green-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <!-- Logo in the center -->
+        <img src="picture/pcijo.png" alt="Point Coffee logo" class="h-20 mb-6" />
+
+        <!-- Menu Items -->
+        <a href="index.html" class="hover:text-green-500">Home</a>
+        <a href="biodata.html" class="hover:text-green-500">Biodata</a>
+        <a href="#" class="hover:text-green-500">Promotion</a>
+        <a href="#" class="hover:text-green-500">Article</a>
+        <a href="#" class="hover:text-green-500">FAQ</a>
+        <a href="#" class="hover:text-green-500">Membership</a>
+      </div>
+    </header>
+
+    <section class="bg-cover bg-center py-10" style="background-image: url('picture/bg-pc.jpg');">
+        <div class="text-center py-10 mt-20 text-gray-800">
+          <h1 class="text-4xl font-bold">Welcome to Our Contact Page</h1>
+        </div>
+      
+        <div class="max-w-4xl mx-auto bg-white font-sans rounded-lg p-8 shadow-lg">
+          <div class="mb-10">
+            <h2 class="text-2xl font-semibold text-gray-700">Get in Touch with Us</h2>
+            <p class="text-gray-600">
+              Please fill out the form below to provide us with your information.
+            </p>
+          </div>
+      
+          <form id="contact-form" class="space-y-8">
+            <!-- Full Name -->
+            <div>
+              <label for="full-name" class="block font-semibold text-gray-600">Full Name</label>
+              <input type="text" id="full-name" name="full_name" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200">
+            </div>
+      
+            <!-- Student ID -->
+            <div>
+              <label for="student-id" class="block font-semibold text-gray-600">Student ID (NIM)</label>
+              <input type="text" id="student-id" name="student_id" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200">
+            </div>
+      
+            <!-- Email Address -->
+            <div>
+              <label for="email" class="block font-semibold text-gray-600">Email Address</label>
+              <input type="email" id="email" name="email" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200">
+            </div>
+      
+            <!-- Faculty/Major -->
+            <div>
+              <label for="faculty" class="block font-semibold text-gray-600">Faculty/Major</label>
+              <select id="faculty" name="faculty" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200">
+                <option value="engineering">Engineering</option>
+                <option value="medicine">Medicine</option>
+                <option value="business">Business</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+      
+            <!-- Date of Birth -->
+            <div>
+              <label for="dob" class="block font-semibold text-gray-600">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200">
+            </div>
+      
+            <!-- Gender -->
+            <div>
+              <label class="block font-semibold text-gray-600">Gender</label>
+              <div class="flex items-center space-x-4 mt-2">
+                <label>
+                  <input type="radio" id="male" name="gender" value="male" class="mr-2">
+                  Male
+                </label>
+                <label>
+                  <input type="radio" id="female" name="gender" value="female" class="mr-2">
+                  Female
+                </label>
+              </div>
+            </div>
+      
+            <!-- Address -->
+            <div>
+              <label for="address" class="block font-semibold text-gray-600">Address</label>
+              <textarea id="address" name="address" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200"></textarea>
+            </div>
+      
+            <!-- Phone Number -->
+            <div>
+              <label for="phone" class="block font-semibold text-gray-600">Phone Number</label>
+              <input type="text" id="phone" name="phone" required
+                class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200" 
+                pattern="[0-9]+" title="Please enter a valid phone number">
+            </div>
+      
+            <!-- Submit Button -->
+            <div>
+              <input type="submit" value="Save"
+                class="w-full bg-green-500 text-white py-3 rounded-lg font-bold hover:bg-green-600 transition">
+            </div>
+          </form>
+        </div>
+      </section>
+      
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menuClose = document.getElementById("menu-close");
+      const fullscreenMenu = document.getElementById("fullscreen-menu");
+
+      menuToggle.addEventListener("click", () => {
+        fullscreenMenu.classList.remove("hidden");
+        fullscreenMenu.classList.add("show");
+      });
+
+      menuClose.addEventListener("click", () => {
+        fullscreenMenu.classList.add("hidden");
+        fullscreenMenu.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
