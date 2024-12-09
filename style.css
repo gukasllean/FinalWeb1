@@ -1,3 +1,108 @@
-.main-foto {
-    padding-top: 10px;
+
+
+
+  .genrefilm {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-family: "Sen", sans-serif;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 100px 0;
+  }
+  .gede {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap:10px
+  }
+  .genrefilm {
+    list-style-type: none; 
+  }
+  
+  .genrefilm li {
+    cursor: pointer;
+    padding: 10px;
+    color: #95989a;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .genrefilm li:hover {
+    font-weight: bold;
+  }
+  
+  
+  
+  .image-container {
+    position: relative;
+    width: 400px;
+    border: 2px solid #313131;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi saat di-hover */
+  }
+  
+  /* Style untuk gambar */
+  .image-container img {
+      width: 330px;
+      border-radius: 10px;
+      height: 227px;
+      border-bottom: 2px solid #313131;
+      margin-bottom: 10px;
+  }
+  
+  /* Judul film */
+  .image-container p {
+    margin: 0;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Genre tersembunyi saat tidak di-hover */
+  .genre {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    width: 100%;
+    font-family: "Sen", sans-serif;
+    color: #555;
+    font-size: 14px;
+    padding: 5px 0;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Genre muncul saat di-hover */
+  .image-container:hover .genre {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Efek hover pada box */
+  .image-container:hover {
+    transform: scale(1.05); /* Memperbesar box sedikit */
+  }
+  
+  .dalam {
+    gap: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+  }
+  .dalam p{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+  
   }

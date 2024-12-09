@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Point Coffee</title>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -68,7 +67,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="relative group">
+            <a href="contact_us.html" class="relative group">
               Contact Us
               <span
                 class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
@@ -76,16 +75,16 @@
             </a>
           </li>
           <li>
-            <a href="#" class="relative group">
-              Film Recommendations
+            <a href="posts.html" class="relative group">
+              Posts
               <span
                 class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
               ></span>
             </a>
           </li>
           <li>
-            <a href="#" class="relative group">
-              Articles
+            <a href="freepage.html" class="relative group">
+              Film Recommendations
               <span
                 class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-700 ease-in-out"
               ></span>
@@ -151,13 +150,19 @@
 
         <!-- Menu Items -->
         <a href="index.html" target="_blank" class="hover:text-green-500"
-          >Main</a
+          >Home</a
         >
-        <a href="index.html" target="_blank" class="hover:text-green-500">Home</a>
-        <a href="contact_us.html" class="hover:text-green-500">Contact Us</a>
-        <a href="#" class="hover:text-green-500">Article</a>
-        <a href="#" class="hover:text-green-500">FAQ</a>
+        <a href="contact_us.html" target="_blank" class="hover:text-green-500"
+          >Contact Us</a
+        >
+        <a href="posts.html" target="_blank" class="hover:text-green-500"
+          >Posts</a
+        >
+        <a href="freepage.html" target="_blank" class="hover:text-green-500"
+          >Film Recommendations</a
+        >
         <a href="#" class="hover:text-green-500">Membership</a>
+        <a href="#" class="hover:text-green-500">FAQ</a>
       </div>
     </header>
 
@@ -179,58 +184,63 @@
 
     <!-- Content Section -->
     <section class="bg-[url('picture/bg-pc.jpg')] bg-center py-10">
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 font-sans">
-          <!-- About Me and Description -->
-          <div class="text-content mx-10 ml-10 md:ml-40 order-1 md:order-none">
-            <h1 class="text-4xl font-bold mb-5">About Me</h1>
-            <p>
-              Hello! I'm Lukas Glean, My Student ID is 2381027 and I am currently<br />
-              studying Informatics Engineering at Universitas Advent Indonesia<br />
-              the Faculty of Information Technology. Fourth child <br />
-              of four siblings and the youngest. I was born<br />
-              in Medan but when I was 12 years old I move out<br />
-              to Bintan. But, that's not all. 1 years later I move out again to
-              Batam. <br />
-            </p>
-          </div>
-          <!-- Glean's Photo -->
-          <div class="photo flex justify-center order-4 md:order-none">
-            <img
-              alt="Lukas"
-              class="w-[350px] max-w-[500px] h-auto rounded-lg"
-              src="picture/glean.jpg"
-            />
-          </div>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 font-sans">
+        <!-- About Me and Description -->
+        <div class="text-content mx-10 ml-10 md:ml-40 order-1 md:order-none">
+          <h1 class="text-4xl font-bold mb-5">About Me</h1>
+          <p>
+            Hello! I'm Lukas Glean, My Student ID is 2381027 and I am
+            currently<br />
+            studying Informatics Engineering at Universitas Advent Indonesia<br />
+            the Faculty of Information Technology. Fourth child <br />
+            of four siblings and the youngest. I was born<br />
+            in Medan but when I was 12 years old I move out<br />
+            to Bintan. But, that's not all. 1 years later I move out again to
+            Batam. <br />
+          </p>
         </div>
-      
-        <!-- Testimony Section -->
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
-          <!-- Image -->
-          <div class="image flex justify-center order-3 md:order-none">
-            <img
-              alt="Es Segar"
-              src="picture/e2e2e2__1_-removebg-preview.png"
-              class="mt-[-20px] w-[200px] h-auto"
-            />
-          </div>
-          <!-- Testimony and Description -->
-          <div class="text-content order-2 md:order-none">
-            <h1 class="text-4xl ml-10 md:ml-40 font-bold text-gray-800 leading-[1.3] mb-5">
-              Testimony
-            </h1>
-            <p class="ml-10 md:ml-40 mx-10">
-              I had a pleasant experience in studying. I learned a lot in class,<br />
-              but my favorite thing is CSS, even though I get confused sometimes.<br />
-              In addition to learning coding, I think my English skills<br />
-              also improved over time because in class we used English. And <br />
-              the most important thing is that before Sir Andrew started class<br />
-              he used to give a little Bible study linked to IT life.<br />
-              It was so much fun to hear that.<br />
-              Oohh, I was very interested when he hooked the two up.
-            </p>
-          </div>
+        <!-- Glean's Photo -->
+        <div class="photo flex justify-center order-4 md:order-none">
+          <img
+            alt="Lukas"
+            class="w-[350px] max-w-[500px] h-auto rounded-lg"
+            src="picture/glean.jpg"
+          />
         </div>
-      </section>
+      </div>
+
+      <!-- Testimony Section -->
+      <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+        <!-- Image -->
+        <div class="image flex justify-center order-3 md:order-none">
+          <img
+            alt="Es Segar"
+            src="picture/e2e2e2__1_-removebg-preview.png"
+            class="mt-[-20px] w-[200px] h-auto"
+          />
+        </div>
+        <!-- Testimony and Description -->
+        <div class="text-content order-2 md:order-none">
+          <h1
+            class="text-4xl ml-10 md:ml-40 font-bold text-gray-800 leading-[1.3] mb-5"
+          >
+            Testimony
+          </h1>
+          <p class="ml-10 md:ml-40 mx-10">
+            I had a pleasant experience in studying. I learned a lot in
+            class,<br />
+            but my favorite thing is CSS, even though I get confused
+            sometimes.<br />
+            In addition to learning coding, I think my English skills<br />
+            also improved over time because in class we used English. And <br />
+            the most important thing is that before Sir Andrew started class<br />
+            he used to give a little Bible study linked to IT life.<br />
+            It was so much fun to hear that.<br />
+            Oohh, I was very interested when he hooked the two up.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <footer class="bg-green-700 text-white p-8">
       <!-- Grid Container -->
